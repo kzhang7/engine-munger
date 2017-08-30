@@ -69,6 +69,14 @@ function makeViewClass(config) {
 
         search.push(paths);
 
+        if (conf[ext] && conf[ext].multiTenant && options.siteId) {
+            search.push([].concat(options.siteId));
+        }
+
+        if (conf[ext] && conf[ext].subDir) {
+            search.push([].concat(conf[ext].subDir));
+        }
+
         if (conf[ext] && conf[ext].i18n) {
             search.push(getLocales(options, conf[ext].i18n));
         }
@@ -224,6 +232,14 @@ function normalizeConfig(config) {
 
     if (config.root) {
         out.root = config.root;
+    }
+
+    if (config.multiTenant) {
+        out.multiTenant = config.multiTenant;
+    }
+
+    if (config.subDir) {
+        out.subDir = config.subDir;
     }
 
     return out;

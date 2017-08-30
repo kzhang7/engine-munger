@@ -1,19 +1,23 @@
 {
-  "name": "engine-munger",
-  "version": "1.1.2",
+  "name": "multi-tenant-engine-munger",
+  "version": "1.0.2",
   "description": "A replacement Express view class that provides asynchronous resolution, internationalization and specialization support",
   "main": "index.js",
   "author": {
     "name": "Poornima Venkatakrishnan",
     "email": "pvenkatakrishnan@paypal.com"
   },
-  "contributors": {
+  "contributors": [{
     "name": "Aria Stewart",
     "email": "ariastewart@paypal.com"
   },
+  {
+    "name": "Kan Zhang",
+    "email": "zhangkan440@gmail.com"
+  }],
   "repository": {
     "type": "git",
-    "url": "https://github.com/krakenjs/engine-munger.git"
+    "url": "https://github.com/kzhang7/multi-tenant-engine-munger.git"
   },
   "dependencies": {
     "aproba": "^1.0.1",
@@ -44,9 +48,9 @@
     "regenerate-test-data": "./test/fixtures/compile-test-data.sh"
   },
   "bugs": {
-    "url": "https://github.com/krakenjs/engine-munger/issues"
+    "url": "https://github.com/kzhang7/multi-tenant-engine-munger/issues"
   },
-  "homepage": "https://github.com/krakenjs/engine-munger",
+  "homepage": "https://github.com/kzhang7/multi-tenant-engine-munger",
   "maintainers": [
     {
       "name": "pvenkatakrishnan",
@@ -63,6 +67,10 @@
     {
       "name": "grawk",
       "email": "mattedelman@gmail.com"
+    },
+    {
+      "name": "Kan Zhang",
+      "email": "zhangkan440@gmail.com"
     }
   ]
 }
